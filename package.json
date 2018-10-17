@@ -1,0 +1,56 @@
+{
+  "name": "@pdestrais/mdtohtml",
+  "version": "0.0.1",
+  "description": "Stencil Markdown to HTML Component",
+  "keywords": [
+    "stencil",
+    "markdown",
+    "html",
+    "web component"
+  ],
+  "module": "dist/esm/index.js",
+  "main": "dist/index.js",
+  "types": "dist/types/components.d.ts",
+  "collection": "dist/collection/collection-manifest.json",
+  "files": [
+    "dist/"
+  ],
+  "scripts": {
+    "build": "stencil build",
+    "start": "stencil build --dev --watch --serve",
+    "test": "jest",
+    "test.watch": "jest --watch"
+  },
+  "dependencies": {
+    "marked": "^0.5.1"
+  },
+  "devDependencies": {
+    "@stencil/core": "^0.12.4",
+    "@stencil/sass": "^0.1.0",
+    "@types/jest": "^23.3.1",
+    "jest": "^23.4.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pdestrais/mdtohtml.git"
+  },
+  "author": "Philippe Destrais",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pdestrais/mdtohtml/issues"
+  },
+  "homepage": "https://github.com/pdestrais/mdtohtml",
+  "jest": {
+    "transform": {
+      "^.+\\.(ts|tsx)$": "<rootDir>/node_modules/@stencil/core/testing/jest.preprocessor.js"
+    },
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(tsx?|jsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "json",
+      "jsx"
+    ]
+  }
+}

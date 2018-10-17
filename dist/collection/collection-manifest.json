@@ -1,0 +1,32 @@
+{
+  "components": [
+    {
+      "tag": "md-to-html",
+      "dependencies": [],
+      "componentClass": "MarkdownToHTMLComponent",
+      "componentPath": "components/mdtohtml.js",
+      "styles": {
+        "$": {
+          "stylePaths": [
+            "components/mdtohtml.css"
+          ]
+        }
+      },
+      "props": [
+        {
+          "name": "content",
+          "type": "String",
+          "attr": "content"
+        }
+      ],
+      "shadow": true
+    }
+  ],
+  "collections": [],
+  "compiler": {
+    "name": "@stencil/core",
+    "version": "0.12.4",
+    "typescriptVersion": "2.9.2"
+  },
+  "bundles": []
+}
